@@ -27,6 +27,8 @@ func _on_player_score():
     
 func _on_spawn_timer_timeout():
     var asteroid_instance = asteroid_scene.instance()
+    asteroid_instance.movement_speed += score
     asteroid_instance.position = Vector2(SCREEN_WIDTH + 8, rand_range(10, SCREEN_HEIGHT - 10))
     asteroid_instance.connect("score", self, "_on_player_score")
     add_child(asteroid_instance)
+    $spawn_timer.wait_time *= 0.99
