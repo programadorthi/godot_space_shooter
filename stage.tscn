@@ -1,11 +1,10 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://stage.gd" type="Script" id=1]
 [ext_resource path="res://sprites/background.png" type="Texture" id=2]
 [ext_resource path="res://background.gd" type="Script" id=3]
 [ext_resource path="res://player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://fonts/hour5.ttf" type="DynamicFontData" id=5]
-[ext_resource path="res://asteroid.tscn" type="PackedScene" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -109,17 +108,5 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
-
-[node name="asteroid" parent="." index="4" instance=ExtResource( 6 )]
-
-position = Vector2( 286.662, 17.6249 )
-
-[node name="asteroid2" parent="." index="5" instance=ExtResource( 6 )]
-
-position = Vector2( 255.451, 74.6827 )
-
-[node name="asteroid3" parent="." index="6" instance=ExtResource( 6 )]
-
-position = Vector2( 299.829, 163.439 )
 
 
